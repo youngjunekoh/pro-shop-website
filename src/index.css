@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #006014;
+  --primary-dark: #004d10;
+  --secondary-color: #FCEB9B;
+  --text-color: #000000;
+  --text-light: #555555;
+  --bg-color: #FFFFFF;
+  --bg-light: #f9f9f9;
+  --bg-dark: #000000;
+
+  /* Font Families */
+  --font-heading: 'Proxima Nova', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-subtitle: 'Crimson Pro', Georgia, serif;
+  --font-body: 'Proxima Nova', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Subtitle styling */
+.subtitle, .section-subtitle, .brand-tagline, .hero-tagline {
+  font-family: var(--font-subtitle);
+  font-style: italic;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Logo Styling */
+.logo-pro {
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.logo-shop {
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.logo-holdings {
+  font-weight: 300;
+  color: var(--text-light);
+  display: block;
+  font-size: 0.4em;
+  letter-spacing: 0.3em;
+  margin-top: 0.25em;
+}
