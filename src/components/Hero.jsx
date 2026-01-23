@@ -5,7 +5,6 @@ function Hero() {
     <section id="hero" className="hero">
       <div className="hero-content">
         <p className="hero-tagline">Golf Media & Lifestyle Holdings</p>
-        </h1>
         <img src={heroLogo} alt="Pro Shop Holdings" className="hero-logo-img" />
         <p className="hero-description">
           We own and operate the world's most influential golf media brands,
