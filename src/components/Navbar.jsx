@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import navLogo from '../assets/PSLogos/PSLogo_Symbol_frame_colors.png'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -7,8 +8,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#" className="navbar-logo">
-          <span className="logo-pro">PRO</span>
-          <span className="logo-shop">SHOP</span>
+          <img src={navLogo} alt="Pro Shop" className="navbar-logo-img" />
         </a>
 
         <button

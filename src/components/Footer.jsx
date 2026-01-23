@@ -1,3 +1,5 @@
+import footerLogo from '../assets/PSLogos/PSLogo_Logotyoe_white.png'
+
 function Footer() {
   return (
     <footer className="footer">
@@ -5,8 +7,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="logo-pro">PRO</span>
-              <span className="logo-shop">SHOP</span>
+              <img src={footerLogo} alt="Pro Shop" className="footer-logo-img" />
             </div>
             <p>Golf Media & Lifestyle Holdings</p>
           </div>
