@@ -28,7 +28,7 @@ function Features() {
       name: 'Pro Shop Studios',
       tagline: 'Golf entertainment for the world stage',
       description: 'Pro Shop Studios is our entertainment division producing premium scripted and unscripted content at the intersection of golf and culture. As co-producers of Happy Gilmore 2 and the revival of The Skins Game on Prime Video, Pro Shop Studios brings golf to mainstream audiences worldwide.',
-      features: ['Happy Gilmore 2', 'The Skins Game', 'Full Swing S3', 'Film & TV Production'],
+      features: ['Film & TV Production', 'Happy Gilmore 2', 'The Skins Game', 'Full Swing'],
       url: null,
       logo: null
     }
@@ -37,7 +37,7 @@ function Features() {
   return (
     <section id="brands" className="brands">
       <div className="container">
-        <h2>Our Portfolio</h2>
+        <h2>Our Brands</h2>
         <p className="section-subtitle">
           Four distinct brands united by a shared passion for golf
         </p>
