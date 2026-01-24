@@ -7,7 +7,7 @@ function Contact() {
             <h2>Get in Touch</h2>
             <p className="contact-lead">
               Interested in partnering with Pro Shop Holdings or learning more
-              about our portfolio of brands?
+              about our brands?
             </p>
 
             <div className="contact-details">
