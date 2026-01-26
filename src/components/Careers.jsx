@@ -14,8 +14,8 @@ function Careers() {
           <div className="careers-content">
             <h2>Join Our Team</h2>
             <p>
-              We're building the future of golf media and culture. If you're passionate
-              about golf, storytelling, and creating world-class content, we'd love to
+              We're building the future of golf media, commerce and culture. If you're passionate
+              about golf, storytelling and creating world-class content and experiences, we'd love to
               hear from you.
             </p>
             <a
