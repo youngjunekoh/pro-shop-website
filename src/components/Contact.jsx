@@ -15,6 +15,10 @@ function Contact() {
                 <div>
                   <h4>Contact Us</h4>
                   <a href="mailto:caddie@proshop.inc">caddie@proshop.inc</a>
+                  <br/>
+                  <br/>
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/company/pro-shop-inc" target="_blank" rel="noopener noreferrer">LinkedIn | Pro Shop</a>
                 </div>
               </div>
             </div>

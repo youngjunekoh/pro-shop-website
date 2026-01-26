@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import navLogo from '../assets/PSLogos/PSLogo_Symbol_frame_colors.png'
+import navLogo from '../assets/PSLogos/PSLogo_Logotype_green.png'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

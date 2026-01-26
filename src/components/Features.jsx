@@ -39,7 +39,7 @@ function Features() {
       <div className="container">
         <h2>Our Brands</h2>
         <p className="section-subtitle">
-          Four distinct brands united by a shared passion for golf
+          Our brands united by a shared passion for golf
         </p>
 
         <div className="brands-grid">
@@ -82,7 +82,7 @@ function Features() {
                   Visit {brand.name} <span className="external-icon">↗</span>
                 </a>
               ) : (
-                <span className="btn btn-brand btn-coming-soon">Coming Soon</span>
+                <span className="btn btn-brand btn-coming-soon">_</span>
               )}
             </div>
           ))}
