@@ -20,6 +20,7 @@ function Footer() {
                 <li><a href="#brands">Our Brands</a></li>
                 <li><a href="#careers">Join Our Team</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.linkedin.com/company/pro-shop-inc" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               </ul>
             </div>
 

@@ -63,7 +63,8 @@
   padding: 120px 24px 80px;
   position: relative;
   overflow: hidden;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background-color: var(--bg-light);
 }
 
 .hero-bg {
@@ -288,12 +289,14 @@
 }
 
 .btn-coming-soon {
-  background-color: #888;
+  /* background-color: #888; */
+  background-color: var(--bg-light);
   cursor: default;
 }
 
 .btn-coming-soon:hover {
-  background-color: #888;
+  /* background-color: #888; */
+  background-color: var(--bg-light);
 }
 
 .external-icon {

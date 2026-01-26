@@ -1,18 +1,18 @@
-import heroLogo from '../assets/PSLogos/PSLogo_Logotype_green.png'
+import heroLogo from '../assets/PSLogos/PSLogo_Logotype_frame_colors.png'
 
 function Hero() {
   return (
     <section id="hero" className="hero">
-      <div className="hero-bg" aria-hidden="true">
+      {/* <div className="hero-bg" aria-hidden="true">
         <img
           src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1920&q=80"
           alt=""
           className="hero-bg-img"
         />
-      </div>
+      </div> */}
       <div className="hero-content">
-        {/* <p className="hero-tagline">Golf Media & Lifestyle Holdings</p> */}
         <img src={heroLogo} alt="Pro Shop Holdings" className="hero-logo-img" />
+        <p className="hero-tagline">Bringing Golf & Culture Together</p>
         <p className="hero-description">
           We own and operate the world's most influential golf media brands,
           connecting millions of passionate golfers through content, community, and culture.
