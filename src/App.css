@@ -34,14 +34,22 @@
   gap: 2.5rem;
 }
 
-.navbar-menu a {
+.navbar-menu > li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu a,
+.navbar-menu .navbar-dropdown-trigger {
   color: var(--text-color);
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.3s;
+  line-height: 1;
 }
 
-.navbar-menu a:hover {
+.navbar-menu a:hover,
+.navbar-menu .navbar-dropdown-trigger:hover {
   color: var(--primary-color);
 }
 
@@ -539,6 +547,267 @@
   font-size: 0.9rem;
 }
 
+/* Navbar Dropdown */
+.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-dropdown-trigger {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0;
+  font-family: inherit;
+}
+
+.navbar-dropdown-trigger:hover {
+  color: var(--primary-color);
+}
+
+.dropdown-arrow {
+  font-size: 0.6rem;
+  transition: transform 0.3s;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.navbar-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  margin-top: 0.75rem;
+  z-index: 1001;
+}
+
+.navbar-dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-dropdown-menu li {
+  padding: 0;
+}
+
+.navbar-dropdown-menu li a,
+.navbar-dropdown-menu li button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: inherit;
+}
+
+.navbar-dropdown-menu li a:hover,
+.navbar-dropdown-menu li button:hover {
+  background: var(--bg-light);
+  color: var(--primary-color);
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: #eee;
+  margin: 0.5rem 0;
+}
+
+/* Brand Card Buttons */
+.brand-card-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.brand-card-buttons .btn {
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn-learn-more {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-learn-more:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.brand-card-buttons .btn-brand {
+  border: 2px solid transparent;
+}
+
+/* Brand Page Styles */
+.brand-page {
+  padding-top: 80px;
+}
+
+.brand-page-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 80px 24px;
+}
+
+.brand-page-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.brand-page-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.brand-page-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  font-family: var(--font-heading);
+  line-height: 1.1;
+}
+
+.brand-page-logo-text .logo-pro {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+}
+
+.brand-page-logo-text .logo-studios {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--text-light);
+  letter-spacing: 0.15em;
+}
+
+.brand-page-title h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.brand-page-tagline {
+  font-family: var(--font-subtitle);
+  font-style: italic;
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.brand-page-content {
+  padding: 80px 24px;
+}
+
+.brand-page-about {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.brand-page-about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.brand-page-about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.brand-page-features {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.brand-page-features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.brand-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.brand-feature-card {
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.brand-feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.brand-feature-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.brand-page-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.brand-not-found {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.brand-not-found h1 {
+  margin-bottom: 1rem;
+}
+
+.brand-not-found p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .brands-grid {
@@ -602,5 +871,63 @@
   .footer-links {
     flex-wrap: wrap;
     gap: 2rem;
+  }
+
+  /* Mobile Dropdown */
+  .navbar-dropdown {
+    width: 100%;
+  }
+
+  .navbar-dropdown-trigger {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .navbar-dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background: var(--bg-light);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+
+  .navbar-dropdown-menu li a,
+  .navbar-dropdown-menu li button {
+    padding: 0.75rem 1rem;
+  }
+
+  .dropdown-divider {
+    margin: 0.25rem 0;
+  }
+
+  /* Mobile Brand Cards */
+  .brand-card-buttons {
+    flex-direction: column;
+  }
+
+  /* Mobile Brand Page */
+  .brand-page-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand-page-title h1 {
+    font-size: 2rem;
+  }
+
+  .brand-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-page-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand-page-cta .btn {
+    text-align: center;
   }
 }
